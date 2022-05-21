@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(90deg, #ffd000 0%, #feb192 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    background-color: white;
+    width: 500px;
+    min-height: 550px;
+    margin: 50px auto;
+    box-shadow: 3px 3px 10px 3px gray;
+}
+
+#heading{
+    text-align: center;
+    padding: 15px 10px 0px 10px;
+    color: black;
+}
+
+.item{
+    width: 90%;
+    height: 30px;
+    font-size: 24px;
+    color: black;
+    box-sizing: border-box;
+    margin: 0px 17px;
+    outline-color: black;
+}
+
+.addBtn{
+    padding: 10px 20px;
+    margin-left: 90px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 155px;
+    background-color: grey;
+    border-radius: 5px;
+    border-color: black;
+    color: black;
+    outline-color: black;
+}
+
+.delAllBtn{
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 155px;
+    background-color: grey;
+    border-radius: 5px;
+    border-color: black;
+    color: black;
+    outline-color: black;
+}
+
+#content{
+    width: 400px;
+    height: 300px;
+    padding: 0px 0px;
+    margin: 20px 17px;
+    margin-left: 50px;
+    overflow: auto;
+}
+
+#table{
+    width: 100%;
+}
+
+th{
+    margin: 5px 0px;    
+}
+
+.firstTd{
+    width: 100%;
+}
