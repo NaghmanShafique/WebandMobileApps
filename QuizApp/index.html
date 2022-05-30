@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <title>Quiz Application Integrated With Firebase Database</title>
+</head>
+<body>
+    <div id="heading-div">
+        <h2 id="main-heading">Quiz Application</h2>
+    </div>
+    <div id="question-div">
+        <h1 id="ques"></h1>   
+    </div>
+    <div class="optionarea">
+        <div class="opt1">
+            <!-- <span> -->
+                <input type="radio" name="option" id="opt1">
+                <label for="opt1" class="option"></label>
+        </div>        
+            <!-- </span> -->
+            <!-- <span> -->
+         <div class="opt2">
+                <input type="radio" name="option" id="opt2">
+                <label for="opt2" class="option"></label>
+            <!-- </span> -->
+        </div>
+        <div class="opt3">
+            <!-- <span> -->
+                <input type="radio" name="option" id="opt3">
+                <label for="opt3" class="option"></label>
+            <!-- </span> -->
+        </div>
+        <div class="opt4">    
+            <!-- <span> -->
+                <input type="radio" name="option" id="opt4">
+                <label for="opt4" class="option"></label>
+            <!-- </span> -->
+        </div>
+      </div>
+      <div id="footer-div">
+          <button id="next-btn" onclick="nextQuestion()">Next</button>
+      </div>
+</body>
+
+<script src="app.js"></script>
+</html>

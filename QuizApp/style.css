@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  margin: 70px 70px;
+}
+
+#result-body {
+  height: 100vh;
+  margin: 70px 70px;
+  background-color: #2aad4b;
+}
+#main-heading {
+    text-align: center;
+    color: #fff;
+    padding-top: 14px;
+ }
+#heading-div {
+  background-color: #2aad4b;
+  height: 80px;
+}
+#question-div {
+  background-color: rgb(196, 228, 171);
+  height: 100px;
+}
+#ques {
+  text-align: center;
+  padding-top: 50px;
+}
+.optionarea {
+  background-color: rgb(196, 228, 171);
+  height: 200px;
+}
+#opt1 {
+  margin-top: 10px;
+}
+.opt1 {
+  margin-bottom: 30px;
+  margin-left: 400px;
+  font-size: 18px;
+  accent-color:green;
+}
+.opt2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 400px;
+  font-size: 18px;
+  accent-color:green;
+}
+.opt3 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 400px;
+  font-size: 18px;
+  accent-color:green;
+}
+.opt4 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 400px;
+  font-size: 18px;
+  accent-color:green;
+}
+#footer-div {
+  background-color: #2aad4b;
+  height: 80px;
+  position: relative;
+}
+
+#next-btn{
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  top: 28%;
+  left: 43%; 
+  width: 170px;
+  height: 40px;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: rgb(196, 228, 171);
+   border: 3px solid  #2aad4b;
+  color: #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#sorry-img ,#sucess-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sorry-hd ,#sucess-hd{
+  text-align: center;
+}
