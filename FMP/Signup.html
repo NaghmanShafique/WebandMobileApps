@@ -10,10 +10,10 @@
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Sign Up</title>
+    <title>Sign In</title>
 </head>
 <body>
-     <!-- Navbar -->
+      <!-- Navbar -->
     <!-- <div class="header"> -->
         <!-- <div class="container"> -->
             <div class="navbar">  
@@ -25,19 +25,34 @@
                         <li><a href="./index.html"><img src="./images/logo.png" width="125px"></a> </li>
                         <li><a href="./contact.html">Contact</a></li>
                         <!-- <li><a href="./Signin.html">Sign In</a></li> -->
-                        <li><a href="./Signup.html" class="btn">Sign Up</a></li>
+                        <li><a href="./singnup.html" class="btn">Sign Up</a></li>
                     </ul>
                 </nav>
               </div>
             <!-- </div> -->
           <!-- </div>       -->
         <!-- End-Navbar -->
+        
+        <div class="sign-up-form">
+
+          <h1>Sign Up Now</h1>
+          <form action="#">
+            <input type="email" class="input-box" placeholder="Your Email">
+            <input type="password" class="input-box" placeholder="Your password">
+            <p><span><input type="checkbox"></span> I agree to the term of services</p>
+            <button type="button" class="sign-btn">Sign Up</button>
+            <hr>
+            <p class="or">OR</p>
+            <button type="button" class="fb-btn">Login with Facebook</button>
+            <p>Do you have an account? <a href="./Signin.html">Sign In</a></p>
+
+          </form>
+        </div>
         <footer class="footer">
           <p class="text-footer">
             Copyright @-All rights are reserved
           </p>
       
         </footer>
-        <script src="app.js"></script>
 </body>
 </html>
