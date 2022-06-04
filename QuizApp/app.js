@@ -14,6 +14,7 @@ const firebaseConfig = {
   console.log(app);
 
   var optionsClass = document.getElementsByClassName("option");
+  var curDateTime = document.getElementById("date-time");
   var score = 0;
   var count = 0;
   let arrLength;
@@ -25,6 +26,7 @@ const firebaseConfig = {
        let sno  = 0;      
        let seq;
        ques.innerHTML = "Q1. "+data.val()[count].question;
+       curDateTime.innerHTML = getCurPkDateTime();
        
     for (var i = 0; i < optionsClass.length; i++) {
           sno = ++sno;
@@ -105,6 +107,8 @@ function showQuestion(e) {
   })
 }
 
+
+
 function addQuestionare() {
 
   var questionare = [
@@ -142,4 +146,14 @@ function addQuestionare() {
      ]  
 
      app.database().ref('/').child('questionare').push(questionare);    
+}
+
+function getCurPkDateTime() {
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var date = today.getDate()+'-'+month[(today.getMonth())]+'-'+today.getFullYear();
+  var dateTime = date+' '+daylist[day];
+  return dateTime;
 }
