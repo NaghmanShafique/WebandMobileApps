@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Sign In</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Sign In</title>
 </head>
+
 <body>
-      <!-- Navbar -->
-    <!-- <div class="header"> -->
-        <!-- <div class="container"> -->
-            <div class="navbar">  
-                <nav>
-                    <ul id="menuItems">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./services.html">Services</a></li>
-                        <li><a href="./about.html">About</a> </li>
-                        <li><a href="./index.html"><img src="./images/logo.png" width="125px"></a> </li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <!-- <li><a href="./Signin.html">Sign In</a></li> -->
-                        <li><a href="./singnup.html" class="btn">Sign Up</a></li>
-                    </ul>
-                </nav>
-              </div>
-            <!-- </div> -->
-          <!-- </div>       -->
-        <!-- End-Navbar -->
-        
-        <div class="sign-up-form">
+  <!-- Navbar -->
+  <div class="navbar">
+    <nav>
+      <ul id="menuItems">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./about.html">About</a> </li>
+        <li><a href="./index.html"><img src="./images/logo.png" width="125px"></a> </li>
+        <li><a href="./contact.html">Contact</a></li>
+        <!-- <li><a href="./Signin.html">Sign In</a></li> -->
+        <li><a href="./singnup.html" class="btn">Sign Up</a></li>
+      </ul>
+    </nav>
+    <img src="./images/menu.png" class="menuIcon" onclick="menuToggle()">
+  </div>
+  <!-- End-Navbar -->
 
-          <h1>Sign Up Now</h1>
-          <form action="#">
-            <input type="text" class="input-box" placeholder="Your User Name">
-            <input type="email" class="input-box" placeholder="Your Email">
-            <input type="password" class="input-box" placeholder="Your password">
-            <!-- <p><span><input type="checkbox"></span> I agree to the term of services</p> -->
-            <button type="button" class="sign-btn">Sign Up</button>
-            <hr>
-            <p class="or">OR</p>
-            <button type="button" class="fb-btn">Login with Facebook</button>
-            <p>Do you have an account? <a href="./Signin.html">Sign In</a></p>
+  <div class="sign-up-form">
 
-          </form>
-        </div>
-        <footer class="footer">
-          <p class="text-footer">
-            Copyright @-All rights are reserved
-          </p>
-      
-        </footer>
+    <h1>Sign Up Now</h1>
+    <form action="#">
+      <input type="text" class="input-box" placeholder="Your User Name">
+      <input type="email" class="input-box" placeholder="Your Email">
+      <input type="password" class="input-box" placeholder="Your password">
+      <button type="button" class="sign-btn">Sign Up</button>
+      <hr>
+      <p class="or">OR</p>
+      <button type="button" class="fb-btn">Login with Facebook</button>
+      <p>Do you have an account? <a href="./Signin.html">Sign In</a></p>
+
+    </form>
+  </div>
+  <footer class="footer">
+    <p class="text-footer">
+      Copyright @-All rights are reserved
+    </p>
+  </footer>
 </body>
+
 </html>
